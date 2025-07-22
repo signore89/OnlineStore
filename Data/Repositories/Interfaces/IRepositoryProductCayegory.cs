@@ -10,6 +10,7 @@ namespace OnlineStoreDouble.Data.Repositories.Interfaces
 
         Task UpdateAsync(ProductCategory updatedProductCategory);
 
-        Task<List<ProductCategory>> GetAll();
+        Task<List<ProductCategory>> GetAllAsync();
+        Task<ProductCategory> GetByIdAsync(int id);
     }
 }

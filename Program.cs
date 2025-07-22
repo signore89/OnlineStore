@@ -14,7 +14,7 @@ builder.Services.AddDbContext<OnlineStoreDBContext>(options =>
 
 
 builder.Services.AddScoped<IRepositoryProductCayegory, RepositoryProductCategory>();
-builder.Services.AddScoped<IProduct, RepositoryProduct>();
+builder.Services.AddScoped<IRepositoryProduct, RepositoryProduct>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -4,7 +4,7 @@ using OnlineStoreDouble.Models;
 
 namespace OnlineStoreDouble.Data.Repositories
 {
-    public class RepositoryProduct(OnlineStoreDBContext onlineStoreDBContext) : IProduct
+    public class RepositoryProduct(OnlineStoreDBContext onlineStoreDBContext) : IRepositoryProduct
     {
         public async Task AddAsync(Product product)
         {
@@ -29,9 +29,14 @@ namespace OnlineStoreDouble.Data.Repositories
             await onlineStoreDBContext.SaveChangesAsync();
         }
 
-        public async Task<List<Product>> GetAll()
+        public async Task<List<Product>> GetAllAsync()
         {
             return await onlineStoreDBContext.Products.AsNoTracking().ToListAsync();
+        }
+        public async Task<Product> GetByIdAsync(int id)
+        {
+            return await onlineStoreDBContext.Products
+                .FirstAsync(p => p.Id == id);
         }
     }
 }

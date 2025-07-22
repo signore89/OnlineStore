@@ -2,7 +2,7 @@
 
 namespace OnlineStoreDouble.Data.Repositories.Interfaces
 {
-    public interface IProduct
+    public interface IRepositoryProduct
     {
         Task AddAsync(Product product);
 
@@ -10,6 +10,7 @@ namespace OnlineStoreDouble.Data.Repositories.Interfaces
 
         Task UpdateAsync(Product updatedProduct);
 
-        Task<List<Product>> GetAll();
+        Task<List<Product>> GetAllAsync();
+        Task<Product> GetByIdAsync(int id);
     }
 }

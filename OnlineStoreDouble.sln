@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36212.18 d17.14
+VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineStoreDouble", "OnlineStoreDouble.csproj", "{1D68F74A-006C-40CE-85D4-A2B642F2D585}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApp", "..\ClientApp\ClientApp.csproj", "{CCE3BE0C-CFB8-43AF-BD14-2380654E55F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1D68F74A-006C-40CE-85D4-A2B642F2D585}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D68F74A-006C-40CE-85D4-A2B642F2D585}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D68F74A-006C-40CE-85D4-A2B642F2D585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCE3BE0C-CFB8-43AF-BD14-2380654E55F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE3BE0C-CFB8-43AF-BD14-2380654E55F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE3BE0C-CFB8-43AF-BD14-2380654E55F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE3BE0C-CFB8-43AF-BD14-2380654E55F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
