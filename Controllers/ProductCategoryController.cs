@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using OnlineStoreDouble.Data.Repositories.Interfaces;
 using OnlineStoreDouble.Exeption;
 using OnlineStoreDouble.Models;
